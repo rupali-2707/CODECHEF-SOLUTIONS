@@ -1,0 +1,17 @@
+#include <bits/stdc++.h>
+using namespace std;
+
+int main() {
+    float n,m;
+	cin>>n>>m;
+	if(((int)n)%5!=0 || n+0.5>m){
+		cout<<fixed<<setprecision(2)<<m<<endl;
+	}
+	else{
+		m-=n;
+		m-=0.5;
+		cout<<fixed<<setprecision(2)<<m<<endl;
+	}
+
+	return 0;
+}
